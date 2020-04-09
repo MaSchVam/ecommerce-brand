@@ -10,6 +10,10 @@
       width: 70px;
       padding: 25px;
     }
+
+    svg.logo {
+      max-height: 100%;
+    }
   
     .options {
       width: 50%;
@@ -17,6 +21,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      cursor: pointer;
   
       .option {
         padding: 10px 15px;
