@@ -15,7 +15,7 @@
     }
 
     .custom-button {
-      width: 80%;
+      width: 110%;
       opacity: 0.7;
       position: absolute;
       top:255px;
@@ -42,11 +42,24 @@
       .name {
         width: 90%;
         margin-bottom: 15px;
+        font-weight: 200;
+       letter-spacing: 2px;
       }
   
       .price {
         width: 10%;
+        font-weight: 200;
       }
     }
   }
   
+  .collection-page{
+  .collection-item {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    position: relative;
+  }
+}

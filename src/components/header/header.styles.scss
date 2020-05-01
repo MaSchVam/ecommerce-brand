@@ -4,15 +4,22 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    padding-right: 80px;
+    position: relative;
   
     .logo-container {
       height: 100%;
       width: 70px;
       padding: 25px;
+      position: relative;
     }
 
     svg.logo {
       max-height: 100%;
+      height: 100%;
+      border-right:0.5px solid #cccccc;
+      position: relative;
+      display: block;
     }
   
     .options {
@@ -25,6 +32,8 @@
   
       .option {
         padding: 10px 15px;
+        letter-spacing: 2px;
+        font-weight: 200;
       }
     }
   }

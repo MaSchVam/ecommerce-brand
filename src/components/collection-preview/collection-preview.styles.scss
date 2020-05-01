@@ -2,10 +2,22 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    position: relative;
   
     .title {
-      font-size: 28px;
-      margin-bottom: 25px;
+      position: absolute;
+    transform: rotateZ(-90deg);
+    
+    letter-spacing: 5px;
+    background-color: #fff;
+    z-index: 1;
+    padding: 13px;
+    -webkit-box-shadow: -11px 20px 6px -7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -11px 20px 6px -7px rgba(0, 0, 0, 0.3);
+    box-shadow: -11px 20px 6px -7px rgba(0, 0, 0, 0.3);
+    transform-origin:left;
+    bottom: 0;
+    margin:unset;
     }
   
     .preview {

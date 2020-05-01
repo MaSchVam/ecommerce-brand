@@ -1,13 +1,14 @@
 .menu-item {
-    min-width: 30%;
-    height: 240px;
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 0 7.5px 15px;
-    overflow: hidden;
+  min-width: 30%;
+  height: 240px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border: 1px solid black;
+  position: relative;
+  margin: 0 7.5px 15px;
+  overflow: hidden;
 
     &:hover {
         cursor: pointer;
@@ -19,7 +20,24 @@
         }
       
         & .content {
-          opacity: 0.9;
+          opacity: 1;
+          transform: translateX(0);
+          transition: transform;
+          transition-duration: 0.2s;
+          transition-timing-function: ease-in-out;
+          
+
+          & .title{
+            color: #000;
+            background-color: #fff;
+          }
+
+          & .subtitle{
+            opacity: 1;
+            transition: opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+          }
         }
       }
       
@@ -41,33 +59,47 @@
         height: 100%;
         background-position: center;
         background-size: cover;
-        opacity: 0.1;
+        opacity: 1;
 
     }
   
     .content {
-      height: 90px;
-      padding: 0 25px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      border: 1px solid black;
-      background-color: white;
-      opacity: 0.7;
+      transform: translateX(15px);
+      opacity: 1;
       position: absolute;
       letter-spacing: 1px;
+      transition: transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
   
       .title {
         font-weight: bold;
-        margin-bottom: 6px;
-        font-size: 22px;
-        color: #4a4a4a;
+    margin-bottom: 6px;
+    font-size: 62px;
+    color: #fff;
+    background-color: #000;
+    padding-left: 11px;
+    opacity: 1;
       }
+
+      
   
       .subtitle {
-        font-weight: lighter;
+        font-weight: 400;
         font-size: 16px;
+        color:#fff;
+        opacity: 0;
+        letter-spacing: 2px;
+        transition: opacity;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        background-color: #000;
+        padding: 3px;
+        margin-bottom: 6px;
       }
     }
   }

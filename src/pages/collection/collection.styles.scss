@@ -1,0 +1,25 @@
+.collection-page {
+    display: flex;
+    flex-direction: column;
+  
+    .title {
+      font-size: 38px;
+      margin: 0 auto 30px;
+    }
+  
+    .items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      & .collection-item {
+        margin-bottom: 30px;
+        width:22%;
+      }
+       &:last-child:after{
+          content: '';
+          width: 22%;
+      }
+    }
+  }
+  
